@@ -77,8 +77,3 @@ adb install -r launcher-shortcut.apk
 MIT License. See [LICENSE](LICENSE). Contributions are welcome through forks
 and pull requests; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-### 界面示例
-
-![简洁桌面界面](docs-clean-launcher.png)
-
-截图展示了电视上的 Apple TV 风格简洁桌面；底部应用位和应用列表可按个人安装情况调整。

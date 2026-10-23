@@ -56,5 +56,15 @@ The project targets Android API 34 and supports Android 9/API 28 and newer.
 
 ## License / 许可证
 
+### 简洁桌面快捷方式
+
+`launcher-shortcut/` 是一个可从电视应用列表手动打开的快捷方式。它启动已安装的 `com.gathin.tvhome` 简洁桌面，不修改系统默认桌面，适合电视重启后恢复桌面。
+
+```bash
+cd launcher-shortcut
+./build.sh
+adb install -r launcher-shortcut.apk
+```
+
 MIT License. See [LICENSE](LICENSE). Contributions are welcome through forks
 and pull requests; see [CONTRIBUTING.md](CONTRIBUTING.md).

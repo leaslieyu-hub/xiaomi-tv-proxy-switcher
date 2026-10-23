@@ -1,0 +1,5 @@
+plugins { id 'com.android.application' }
+android { namespace 'local.proxy.switcher'; compileSdk 34
+    defaultConfig { applicationId 'local.proxy.switcher'; minSdk 28; targetSdk 34; versionCode 1; versionName '1.0' }
+    buildTypes { release { signingConfig signingConfigs.debug } }
+}

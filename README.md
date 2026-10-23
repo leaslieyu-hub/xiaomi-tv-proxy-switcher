@@ -1,0 +1,55 @@
+# Xiaomi TV Proxy Switcher
+
+## 中文说明
+
+这是一个面向 Android TV 的 HTTP 代理控制应用，适用于需要在多台手机或多个代理之间快速切换的电视。
+
+功能：
+
+- 预设最多 4 组代理；
+- 每组包含设备备注、IP 地址和端口；
+- “保存”只保存预设；“使用”保存并立即启用；
+- 右上角红/绿状态灯显示代理是否启用；
+- 顶部显示当前生效的设备备注和代理地址；
+- 自动修正常见中文点号 `·`、`．`、`。`，避免 IP 地址输入错误。
+
+应用通过 Android `Settings.Global` 修改 `http_proxy`。首次安装后需要使用 ADB 授予 `WRITE_SECURE_SETTINGS`：
+
+```bash
+adb install -r proxy-switcher.apk
+adb shell pm grant local.proxy.switcher android.permission.WRITE_SECURE_SETTINGS
+```
+
+电视系统必须允许该权限；普通未授权应用不能修改全局代理。应用只配置 HTTP 代理，不提供 VPN，也不会保存代理密码。
+
+## English
+
+Xiaomi TV Proxy Switcher is an Android TV application for switching between HTTP proxies hosted by multiple phones or devices.
+
+Features:
+
+- Up to four saved proxy presets;
+- Device label, IP address, and port for every preset;
+- **Save** stores a preset; **Use** stores and activates it;
+- Red/green status indicator in the top-right corner;
+- The active device label and proxy address are shown at the top;
+- Common Chinese punctuation characters (`·`, `．`, `。`) are normalized to `.` in IP addresses.
+
+The app updates Android `Settings.Global` key `http_proxy`. After installation, grant the required permission with ADB:
+
+```bash
+adb install -r proxy-switcher.apk
+adb shell pm grant local.proxy.switcher android.permission.WRITE_SECURE_SETTINGS
+```
+
+The TV firmware must allow this permission. The app configures HTTP proxy settings only; it does not implement VPN and does not store proxy credentials.
+
+## Build
+
+Open this directory with Android Studio or run:
+
+```bash
+./gradlew assembleRelease
+```
+
+The project targets Android API 34 and supports Android 9/API 28 and newer.

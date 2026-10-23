@@ -53,3 +53,8 @@ Open this directory with Android Studio or run:
 ```
 
 The project targets Android API 34 and supports Android 9/API 28 and newer.
+
+## License / 许可证
+
+MIT License. See [LICENSE](LICENSE). Contributions are welcome through forks
+and pull requests; see [CONTRIBUTING.md](CONTRIBUTING.md).

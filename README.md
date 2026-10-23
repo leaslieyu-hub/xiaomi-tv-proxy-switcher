@@ -72,6 +72,12 @@ adb install -r launcher-shortcut.apk
 
 **Mouse connection:** Bluetooth may be unavailable on this MiTV-ASTP0 firmware. A wired USB mouse or a 2.4 GHz wireless mouse with its USB receiver is recommended. Plug the receiver into the TV's USB port and wait a few seconds for Android TV to recognize it.
 
+### 界面示例
+
+![电视代理控制界面](docs-proxy-control.png)
+
+截图展示了代理状态、当前使用的代理备注、代理清单、中文/English 切换按钮，以及正在使用代理的整行高亮效果。
+
 MIT License. See [LICENSE](LICENSE). Contributions are welcome through forks
 and pull requests; see [CONTRIBUTING.md](CONTRIBUTING.md).
 

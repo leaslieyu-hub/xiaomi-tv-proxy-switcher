@@ -66,5 +66,13 @@ cd launcher-shortcut
 adb install -r launcher-shortcut.apk
 ```
 
+### 桌面恢复快捷方式
+
+`stock-home-shortcut/` 提供“返回小米桌面”应用。它用于需要临时返回小米原生桌面、检查系统设置或处理兼容性问题的情况。点击后会关闭简洁桌面的 Home 辅助接管，并启动小米原生桌面；不会修改 HDMI1 开机输入设置。
+
+如果需要再次使用简洁桌面，打开“简洁桌面”应用即可。两个快捷方式都保留在电视应用列表中，方便在桌面接管异常时恢复。
+
+**Desktop recovery shortcut (English):** `stock-home-shortcut/` adds the **Return to Xiaomi Desktop** app. Use it to temporarily open the original Xiaomi desktop for settings or compatibility checks. It disables the clean launcher's Home helper and starts Xiaomi's desktop without changing the HDMI1 startup input. Open **简洁桌面** again to return to the clean launcher.
+
 MIT License. See [LICENSE](LICENSE). Contributions are welcome through forks
 and pull requests; see [CONTRIBUTING.md](CONTRIBUTING.md).

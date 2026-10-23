@@ -28,8 +28,6 @@ Use the language button in the top right to switch between English and Chinese.
 
 ![TV proxy control interface](docs-proxy-control-en.png)
 
-![Chinese interface](docs-proxy-control.png)
-
 ## Xiaomi TV launcher shortcut
 
 `launcher-shortcut/` provides a small app that opens the installed clean launcher `com.gathin.tvhome` after a reboot. It does not change the TV's HDMI startup input.

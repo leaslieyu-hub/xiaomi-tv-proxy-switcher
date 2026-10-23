@@ -80,9 +80,6 @@ adb install -r launcher-shortcut.apk
 
 截图展示了代理状态、当前使用的代理备注、代理清单、中文/English 切换按钮，以及正在使用代理的整行高亮效果。
 
-英文界面：
-
-![English TV proxy control interface](docs-proxy-control-en.png)
 
 MIT License. See [LICENSE](LICENSE). Contributions are welcome through forks
 and pull requests; see [CONTRIBUTING.md](CONTRIBUTING.md).

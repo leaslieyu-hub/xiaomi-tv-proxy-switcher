@@ -11,7 +11,7 @@ public class MainActivity extends Activity {
     try {
       String services = Settings.Secure.getString(getContentResolver(), Settings.Secure.ENABLED_ACCESSIBILITY_SERVICES);
       if (services != null) Settings.Secure.putString(getContentResolver(), Settings.Secure.ENABLED_ACCESSIBILITY_SERVICES, services.replace(":com.gathin.tvhome/.HomeKeyService", "").replace("com.gathin.tvhome/.HomeKeyService", ""));
-      startActivity(new Intent(Intent.ACTION_MAIN).setComponent(new ComponentName("com.mitv.tvhome", "com.mitv.tvhome.MainActivityUserMode")));
+      startActivity(new Intent(Intent.ACTION_MAIN).setComponent(new ComponentName("com.mitv.tvhome", "com.mitv.tvhome.MainActivity")));
     }
     catch (RuntimeException e) { Toast.makeText(this,"无法打开小米桌面",Toast.LENGTH_LONG).show(); }
     finish();
